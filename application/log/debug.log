@@ -1,0 +1,20 @@
+2012-05-05T19:57:09+02:00 DEBUG (7): SELECT `clientes`.* FROM `clientes`
+2012-05-05T20:00:48+02:00 DEBUG (7): SELECT `clientes`.`nome` FROM `clientes`
+2012-05-05T20:08:07+02:00 DEBUG (7): SELECT `c`.`nome`, `t`.* FROM `clientes` AS `c`
+ INNER JOIN `telefones` AS `t` ON c.cpf = t.cpf ORDER BY `c`.`nome` ASC
+2012-05-05T20:10:22+02:00 DEBUG (7): SELECT `c`.`nome`, `t`.* FROM `clientes` AS `c`
+ LEFT JOIN `telefones` AS `t` ON c.cpf = t.cpf ORDER BY `c`.`nome` ASC
+2012-05-05T20:18:48+02:00 DEBUG (7): SELECT `c`.`nome`, now(), `t`.* FROM `clientes` AS `c`
+ LEFT JOIN `telefones` AS `t` ON c.cpf = t.cpf ORDER BY `c`.`nome` ASC
+2012-05-05T20:18:50+02:00 DEBUG (7): SELECT `c`.`nome`, now(), `t`.* FROM `clientes` AS `c`
+ LEFT JOIN `telefones` AS `t` ON c.cpf = t.cpf ORDER BY `c`.`nome` ASC
+2012-05-05T20:21:06+02:00 DEBUG (7): SELECT `c`.`nome`, now() AS `d`, `t`.* FROM `clientes` AS `c`
+ LEFT JOIN `telefones` AS `t` ON c.cpf = t.cpf ORDER BY `c`.`nome` ASC
+2012-05-05T20:22:21+02:00 DEBUG (7): SELECT `c`.`nome`, DATE_FORMAT(now(), "%D/%M/%Y") AS `d`, `t`.* FROM `clientes` AS `c`
+ LEFT JOIN `telefones` AS `t` ON c.cpf = t.cpf ORDER BY `c`.`nome` ASC
+2012-05-05T20:22:35+02:00 DEBUG (7): SELECT `c`.`nome`, DATE_FORMAT(now(), "%dd/%mm/%Y") AS `d`, `t`.* FROM `clientes` AS `c`
+ LEFT JOIN `telefones` AS `t` ON c.cpf = t.cpf ORDER BY `c`.`nome` ASC
+2012-05-05T20:22:46+02:00 DEBUG (7): SELECT `c`.`nome`, DATE_FORMAT(now(), "%d/%m/%Y") AS `d`, `t`.* FROM `clientes` AS `c`
+ LEFT JOIN `telefones` AS `t` ON c.cpf = t.cpf ORDER BY `c`.`nome` ASC
+2012-05-05T21:03:06+02:00 DEBUG (7): SELECT `c`.`nome`, DATE_FORMAT(NOW(), "%d/%m/%Y") AS `d`, `t`.* FROM `clientes` AS `c`
+ LEFT JOIN `telefones` AS `t` ON c.cpf = t.cpf ORDER BY `c`.`nome` ASC

@@ -1,0 +1,12 @@
+<!-- <form action="<php echo $this->action; ?>" method="post">
+CPF: <input type="text" name="cpf" value="<php echo $this->cliente->cpf; ?>"><br>
+Nome: <input type="text" name="nome" value="<php echo $this->cliente->nome; ?>"><br>
+<input type="submit" value="Gravar">
+</form>//-->
+
+<?php echo $this->form; ?>
+<?php echo $this->formTelefone; ?>
+
+<ul>
+<?php echo $this->partialLoop('telefones.phtml', $this->telefones); ?>
+</ul>

@@ -1,0 +1,18 @@
+<a href="<?php echo $this->urlEditar; ?>">Incluir cliente</a>
+<br><br><br><br>
+<table border="1">
+<thead>
+<tr>
+<th>CPF</th>
+<th>Nome</th>
+<th>Editar</th>
+<th>Excluir</th>
+</tr>
+</thead>
+<tbody>
+<?php echo $this->partialLoop('clientes.phtml', $this->clientes); ?>
+</tbody>
+</table>
+
+
+<a href="<?php echo $this->urlLogout; ?>">Sair</a>

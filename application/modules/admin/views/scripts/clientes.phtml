@@ -1,0 +1,10 @@
+<!-- $this->cliente-> nome utilizado no setObjectKey('clientes')  
+$this->baseUrl() / caminho
+-->
+
+<tr>
+<td><?php echo $this->cliente->cpf; ?></td>
+<td><?php echo $this->cliente->nome; ?></td>
+<td><a href="<?php echo $this->placeholder('url')->editar . '/cpf/' . $this->cliente->cpf; ?>">Editar</a></td>
+<td><a href="<?php echo $this->placeholder('url')->excluir. '/cpf/' . $this->cliente->cpf; ?>">Excluir</a></td>
+</tr>
